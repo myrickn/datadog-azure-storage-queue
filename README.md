@@ -6,7 +6,16 @@ This custom Datadog Agent check collects metrics from Azure Storage Queues, spec
 - The approximate message count (queue depth)
 
 ---
+### ⚠️ Disclaimer
 
+**Warning: I’m an idiot.**
+
+This project was stitched together from trial, error, mild panic, and a Frankenstein patchwork of other people’s code snippets generously shared across the internet. Credit and thanks to the smart folks I “borrowed” from—know that your work lives on in glorious copy-paste form.
+
+This is **not** an official Microsoft or Datadog project. It’s not supported, tested, or guaranteed to work. Use it if it helps, but don’t @ me if your queues catch fire. You’ve been warned.
+
+
+---
 ## Files
 
 - `azure_queue_check.py`: Entry point for the Datadog Agent.
