@@ -1,0 +1,15 @@
+init_config: {}
+
+instances:
+  - connection_string: "<YOUR_AZURE_QUEUE_CONNECTION_STRING>"
+    proxy_url: "http://proxy.com:8080"  # Optional
+    tags:
+      - env:prod
+      - region:us-east
+    queues:
+      - name: my-queue-1
+        tags:
+          - app:orders
+      - name: my-queue-2
+        tags:
+          - app:billing
